@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "symlinking to ~"
+sleep 2
+ln -sf . ~
