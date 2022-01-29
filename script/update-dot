@@ -20,3 +20,8 @@ cp -v ~/.zsh_scripts $PWD/.zsh_scripts
 cp -v ~/.screenrc $PWD/.screenrc
 cp -v ~/.mongorc.js $PWD/.mongorc.js
 cp -v ~/.cobra.yaml $PWD/.cobra.yaml
+cp -v ~/.config/nvim/init.vim $PWD/.config/nvim/
+cp -v ~/.config/nvim/vim-plug/plugins.vim $PWD/.config/nvim/vim-plug
+cp -v ~/.config/nvim/coc-settings.json $PWD/.config/nvim/
+cp -v ~/.config/Code/User/settings.json $PWD/.config/Code/User/
+cp -v ~/.config/Code/User/extras $PWD/.config/Code/User/ -r

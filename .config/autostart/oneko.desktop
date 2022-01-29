@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=oneko
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=false
+Name[en_US]=oneko
+Name=oneko
+Comment[en_US]=The cat
+Comment=The cat
