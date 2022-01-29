@@ -1,0 +1,30 @@
+#Custom Aliases
+  
+#Request confirmation before deleting a file
+# sl with ^C
+# alias sl='sl -e'
+alias sl='echo "You have entered wrong !!"; neofetch'
+# Copy Paste
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+# Vim NERDTree
+alias vimt='vim "+NERDTree"'
+alias vimtg='vim "+NERDTree" README.md'
+alias nvimt='nvim "+NERDTree"'
+alias nvimtg='nvim "+NERDTree" README.md'
+# python3 shortcut
+# unalias -m python
+# unalias -m pip
+# alias python=python3
+# alias pip=pip3
+alias py3='python3'
+# Json pretty
+# alias prettyjson='python -m json.tool'
+alias py='python3'
+# make a ping request
+alias req_ping='ping -c 5 google.com'
+# youtube-dl
+alias yt-music='yt-dlp -x --audio-format mp3'
+
+# minikube kubect
+# alias k="minikube kubectl"

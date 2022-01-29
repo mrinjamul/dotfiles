@@ -1,0 +1,47 @@
+#
+#    Env
+#
+WORKDIR=$HOME/Works/
+PPDIR=$HOME/Injamul/Private_project/
+STORAGE=/mnt/Storage/
+
+#
+#    Commands
+#
+# Exa is ls written in rust
+if [ "$(command -v exa)" ]; then
+#    unalias -m 'll'
+#    unalias -m 'l'
+#    unalias -m 'la'
+#    unalias -m 'ls'
+#    alias ls='exa -G  --color auto --icons -a -s type'
+#    alias ll='exa -l --color always --icons -a -s type'
+    alias els='exa -G  --color auto --icons -s type'
+    alias el='exa -G  --color auto --icons -a -s type'
+    alias ell='exa -l --color always --icons -s type'
+    alias ela='exa -l --color always --icons -a -s type'
+fi
+
+# Bat is cat in rust
+if [ "$(command -v bat)" ]; then
+#  unalias -m 'cat'
+  alias batp='bat -pp --theme="Dracula"'
+#  alias cat='bat -pp --theme="Nord"'
+#  alias bat='bat -pp --theme="Dracula"'
+fi
+
+# for mdcat: made by me
+if [ "$(command -v mdcat)" ]; then
+    # alias cat='mdcat'
+fi
+
+# Func
+
+function fuck() {
+    if pkill -9 "$2"; then
+        echo
+        echo " (╯°□°）╯︵$(echo "$2"|toilet -f term -F rotate)"
+        echo
+    fi
+}
+
