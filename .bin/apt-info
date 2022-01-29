@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Variables
+APPNAME="apt-info"
+
+# functions
+
+
+# Main
+
+if [ "$1" == "" ]
+then
+	echo "Usage: $APPNAME [package name]"
+	echo "$APPNAME is used to get info about any dpkg available via apt."
+	echo "Written by Injamul Mohammad Mollah"
+
+else
+	apt-cache show "$1" | less
+fi

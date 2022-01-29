@@ -1,0 +1,11 @@
+#!/bin/bash
+
+while [ 1 ]
+do
+read -p "Enter string:" string
+if [ "$string" == 'q' ]
+then exit
+else
+echo $string | tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+fi
+done

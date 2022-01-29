@@ -1,0 +1,102 @@
+#!/bin/bash
+
+# Variables
+
+# Functions
+
+msg() {
+    printf '%b\n' "$1" >&2
+}
+
+success() {
+    msg "\33[32m[✔]\33[0m ${1}${2}"
+}
+
+error() {
+    msg "\33[31m[✘]\33[0m ${1}${2}"
+    exit 1
+}
+
+function create_new_file(){
+cat > ~/.local/share/recently-used.xbel << "EOF"
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+></xbel>
+EOF
+
+}
+
+# Main
+
+if [ "$1" == "" ]
+then
+
+read -r -p "Do you want to clear Quick access history? [Y/n] " input
+
+case $input in
+    [yY][eE][sS]|[yY])
+		echo "Cleaning Quick Access..."
+		sleep 1s
+		create_new_file && success "Quick access history is cleared"
+		;;
+    [nN][oO]|[nN])
+		echo "Ok, as your wish !"
+		echo "Quick access history isn't cleared"
+       		;;
+    *)
+	echo "Invalid input..."
+	exit 1
+	;;
+esac
+
+
+read -r -p "Do you want to clear Thumbnails? [Y/n] " input1
+
+case $input1 in
+    [yY][eE][sS]|[yY])
+		echo "Cleaning Thumbnails..."
+		sleep 1s
+		rm -rfv ~/.cache/thumbnails/fail/gnome-thumbnail-factory/* \
+		~/.cache/thumbnails/large/* ~/.cache/thumbnails/normal/* \
+		~/.thumbnails/fail/gnome-thumbnail-factory/* ~/.thumbnails/large/* \
+		~/.thumbnails/normal/* && success "Thumbnails is cleared !!\n"
+		;;
+    [nN][oO]|[nN])
+		echo "Ok, as your wish !"
+		echo "Thumbnails isn't cleared"
+		echo ""
+       		;;
+    *)
+	echo "Invalid input..."
+        echo ""
+	exit 1
+	;;
+esac
+
+
+
+elif [ "$1" == "y" ]
+then
+
+echo "Clearing Quick access history !"
+echo ""
+sleep 1s
+create_new_file && success "Quick access history is cleared"
+echo ""
+sleep .5s
+echo "Clearing Thumbnails !"
+echo ""
+sleep 1s
+rm -rf ~/.cache/thumbnails/fail/gnome-thumbnail-factory/* \
+~/.cache/thumbnails/large/* ~/.cache/thumbnails/normal/* \
+~/.thumbnails/fail/gnome-thumbnail-factory/* ~/.thumbnails/large/* \
+~/.thumbnails/normal/* && success "Thumbnails is cleared !!\n"
+
+else
+
+echo "Invalid Input !!"
+echo ""
+
+fi
