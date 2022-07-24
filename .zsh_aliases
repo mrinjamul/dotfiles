@@ -21,9 +21,12 @@ alias py3='python3'
 # Json pretty
 # alias prettyjson='python -m json.tool'
 alias py='python3'
+alias python='python3'
+alias pip='pip3'
 # make a ping request
 alias req_ping='ping -c 5 google.com'
 # youtube-dl
+alias yt-dl-480="yt-dlp -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'"
 alias yt-music='yt-dlp -x --audio-format mp3'
 
 # minikube kubect

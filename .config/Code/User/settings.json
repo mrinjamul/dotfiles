@@ -20,7 +20,6 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "fluent-icons",
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
@@ -39,7 +38,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -101,5 +100,6 @@
     "markdown": true,
     "c": true
   },
-  "deno.codeLens.test": false
+  "deno.codeLens.test": false,
+  "workbench.productIconTheme": "fluent-icons"
 }

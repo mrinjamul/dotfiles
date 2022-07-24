@@ -135,16 +135,16 @@ fi
 
 # Deno Installation
 
-# export DENO_INSTALL="/home/injamul/.deno"
-# export PATH="$DENO_INSTALL/bin:$PATH"
-# source /usr/local/etc/bash_completion.d/deno.bash
+export DENO_INSTALL="/home/injamul/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+source /usr/local/etc/bash_completion.d/deno.bash
 
 # User-defined PATH
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export PATH="$HOME/.bin:$PATH"
 # Dart 
-# export PATH="$PATH:/usr/lib/dart/bin"
+export PATH="$PATH:/usr/lib/dart/bin"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Install Ruby Gems to ~/gems
