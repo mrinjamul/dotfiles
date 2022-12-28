@@ -153,11 +153,6 @@ export PATH=$HOME/.git/scripts:$PATH
 # Dart
 export PATH="$PATH:/usr/lib/dart/bin"
 
-# Install Ruby Gems to ~/.gems
-export GEM_HOME="$HOME/.gems"
-export PATH="$HOME/.gems/bin:$PATH"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

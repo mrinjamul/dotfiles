@@ -1,0 +1,1 @@
+/home/injamul/.fzf/shell/key-bindings.fish

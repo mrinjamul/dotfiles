@@ -2,26 +2,54 @@
 
 echo "Updating dotfiles"
 
+# Update dotfiles
+
+# default profile
+cp -v ~/.profile $PWD/.profile
+
+# bash shell configs
 cp -v ~/.bash_aliases $PWD/.bash_aliases
 cp -v ~/.bash_profile $PWD/.bash_profile
 cp -v ~/.bashrc $PWD/.bashrc
-cp -v ~/.gitconfig $PWD/.gitconfig
-cp -v ~/.gitignore $PWD/.gitignore
-cp -v ~/.git $PWD/.git-scripts -r
-cp -v  ~/.hidden $PWD/.hidden
-cp -v ~/.nanorc $PWD/.nanorc
-cp -v ~/.profile $PWD/.profile
-cp -v ~/.tmux.conf $PWD/.tmux.conf
-cp -v ~/.vimrc $PWD/.vimrc
+
+# zsh shell configs
 cp -v ~/.zsh_aliases $PWD/.zsh_aliases
 cp -v ~/.zshenv $PWD/.zshenv
 cp -v ~/.zshrc $PWD/.zshrc
 cp -v ~/.zsh_scripts $PWD/.zsh_scripts
+
+# fish shell configs
+cp -v ~/.config/fish $PWD/.config/ -r
+
+# git configs
+cp -v ~/.gitconfig $PWD/.gitconfig
+cp -v ~/.gitignore $PWD/.gitignore
+cp -v ~/.git $PWD/.git-scripts -r
+
+# hidden files
+cp -v  ~/.hidden $PWD/.hidden
+
+# terminal multiplexer config
+cp -v ~/.tmux.conf $PWD/.tmux.conf
+
+# screen term multiplexer config
 cp -v ~/.screenrc $PWD/.screenrc
-cp -v ~/.mongorc.js $PWD/.mongorc.js
-cp -v ~/.cobra.yaml $PWD/.cobra.yaml
+
+# nano config
+cp -v ~/.nanorc $PWD/.nanorc
+
+# old vimrc
+cp -v ~/.vimrc $PWD/.vimrc
+
+# nvim configs
 cp -v ~/.config/nvim/init.vim $PWD/.config/nvim/
 cp -v ~/.config/nvim/vim-plug/plugins.vim $PWD/.config/nvim/vim-plug
 cp -v ~/.config/nvim/coc-settings.json $PWD/.config/nvim/
+
+# vscode configs
 cp -v ~/.config/Code/User/settings.json $PWD/.config/Code/User/
 cp -v ~/.config/Code/User/extras $PWD/.config/Code/User/ -r
+
+# misc
+cp -v ~/.mongorc.js $PWD/.mongorc.js
+cp -v ~/.cobra.yaml $PWD/.cobra.yaml
