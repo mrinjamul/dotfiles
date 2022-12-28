@@ -18,6 +18,7 @@
   "terminal.integrated.autoReplies": {
     "[Oh My Zsh] Would you like to check for updates? [Y/n]": "Y\r"
   },
+  "terminal.integrated.enableBell": true,
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark Default",
@@ -98,8 +99,17 @@
     "yaml": true,
     "plaintext": true,
     "markdown": true,
-    "c": true
+    "c": true,
+    "java": true
   },
   "deno.codeLens.test": false,
-  "workbench.productIconTheme": "fluent-icons"
+  "workbench.productIconTheme": "fluent-icons",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "settingsSync.ignoredExtensions": [],
+  "settingsSync.ignoredSettings": []
 }

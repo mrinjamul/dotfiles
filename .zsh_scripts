@@ -45,3 +45,7 @@ function fuck() {
     fi
 }
 
+function siliconc() {
+    silicon "$1" -o "$1.png"
+}
+
