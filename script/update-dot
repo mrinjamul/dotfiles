@@ -21,6 +21,9 @@ cp -v ~/.zsh_scripts $PWD/.zsh_scripts
 # fish shell configs
 cp -v ~/.config/fish $PWD/.config/ -r
 
+# starship prompt configs
+cp -v ~/.config/starship.toml $PWD/.config/starship.toml
+
 # git configs
 cp -v ~/.gitconfig $PWD/.gitconfig
 cp -v ~/.gitignore $PWD/.gitignore

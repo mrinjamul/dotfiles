@@ -14,20 +14,42 @@ set -gx PAGER less
 # Exa is ls written in rust
 if type -q exa
     # abbr ls "exa -lag --header"
-    abbr els 'exa -G  --color auto --icons -s type'
-    abbr el 'exa -G  --color auto --icons -a -s type'
-    abbr ell 'exa -l --color always --icons -s type'
-    abbr elll "exa -lag --header"
-    abbr ela 'exa -l --color always --icons -a -s type'
+    abbr lsa "exa -lag --header"
+    abbr ls 'exa -G  --color auto --icons -s type'
+    abbr l 'exa -G  --color auto --icons -a -s type'
+    abbr ll 'exa -l --color always --icons -s type'
+    abbr la 'exa -l --color always --icons -a -s type'
 end
 
 # Bat is cat in rust
 if type -q bat
-    abbr batp 'bat -pp --theme="Dracula"'
+    function batp
+        bat -pp --theme="Dracula" $argv
+    end
+    abbr catp 'batp'
 end
 
 # Func
 # ----------------
+
+# fish title
+function fish_title
+    set -q argv[1]; or set argv fish
+    # Looks like ~/d/fish: git log
+    # or /e/apt: fish
+    echo (fish_prompt_pwd_dir_length=1 prompt_pwd): $argv;
+end
+
+# notify recent finished jobs
+function notify
+    set -l job (jobs -l -g)
+    or begin; echo "There are no jobs" >&2; return 1; end
+
+    function _notify_job_$job --on-job-exit $job --inherit-variable job
+        echo -n \a # beep
+        functions -e _notify_job_$job
+    end
+end
 
 # fuck function
 function fuck
@@ -43,13 +65,3 @@ function siliconc
     silicon $argv[1] -o $argv[1].png
 end
 
-
-function notify
-    set -l job (jobs -l -g)
-    or begin; echo "There are no jobs" >&2; return 1; end
-
-    function _notify_job_$job --on-job-exit $job --inherit-variable job
-        echo -n \a # beep
-        functions -e _notify_job_$job
-    end
-end

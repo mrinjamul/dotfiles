@@ -1,10 +1,12 @@
 # Custom Aliases
 
+abbr cls "clear"
 abbr rm "rm -i"
 abbr cp "cp -i"
 abbr mv "mv -i"
 abbr mkdir "mkdir -p"
 abbr h "history"
+abbr hc "history -c"
 # prettier which
 abbr which "type -a"
 
@@ -27,6 +29,20 @@ abbr py3 'python3'
 abbr py 'python3'
 abbr python 'python3'
 abbr pip 'pip3'
+
+# Git
+abbr ga 'git add'
+abbr gaa 'git add --all'
+abbr gbl 'git blame -b -w'
+abbr gcb 'git checkout -b'
+abbr gco 'git checkout'
+abbr gd 'git diff'
+abbr gdca 'git diff --cached'
+abbr gfa 'git fetch -a -p'
+abbr gfo 'git fetch origin'
+abbr grv 'git remote -v'
+abbr gsb 'git status -sb'
+
 
 # Json pretty
 # abrr prettyjson "python -m json.tool"
