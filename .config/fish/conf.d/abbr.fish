@@ -15,8 +15,8 @@ abbr sl "sl -e"
 abbr sl 'echo "You have entered wrong !!"; neofetch'
 
 # Copy Paste
-abbr pbcopy 'xsel --clipboard --input'
-abbr pbpaste 'xsel --clipboard --output'
+# abbr pbcopy 'xsel --clipboard --input'
+# abbr pbpaste 'xsel --clipboard --output'
 
 # Vim NERDTree
 abbr vimt 'vim "+NERDTree"'

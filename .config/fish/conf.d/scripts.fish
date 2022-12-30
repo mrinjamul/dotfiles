@@ -51,6 +51,16 @@ function notify
     end
 end
 
+# Copy Paste
+function pbcopy
+    xsel --clipboard --input $argv
+end
+
+function pbpaste
+    xsel --clipboard --output $argv
+end
+
+
 # fuck function
 function fuck
     if pkill -9 $argv[2]
