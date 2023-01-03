@@ -29,6 +29,12 @@ if type -q bat
     abbr catp 'batp'
 end
 
+# Zoxide alt to cd 
+if type -q zoxide
+    zoxide init fish | source
+    # abbr cd 'z'
+end
+
 # Func
 # ----------------
 

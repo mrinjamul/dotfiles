@@ -1,16 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
-SETUVAR _fish_abbr_batp:bat\x20\x2dpp\x20\x2d\x2dtheme\x3d\x22Dracula\x22
 SETUVAR _fish_abbr_catp:batp
 SETUVAR _fish_abbr_cls:clear
 SETUVAR _fish_abbr_cp:cp\x20\x2di
-SETUVAR _fish_abbr_el:exa\x20\x2dG\x20\x20\x2d\x2dcolor\x20auto\x20\x2d\x2dicons\x20\x2da\x20\x2ds\x20type
-SETUVAR _fish_abbr_ela:exa\x20\x2dl\x20\x2d\x2dcolor\x20always\x20\x2d\x2dicons\x20\x2da\x20\x2ds\x20type
-SETUVAR _fish_abbr_ell:exa\x20\x2dl\x20\x2d\x2dcolor\x20always\x20\x2d\x2dicons\x20\x2ds\x20type
-SETUVAR _fish_abbr_elll:exa\x20\x2dlag\x20\x2d\x2dheader
-SETUVAR _fish_abbr_els:exa\x20\x2dG\x20\x20\x2d\x2dcolor\x20auto\x20\x2d\x2dicons\x20\x2ds\x20type
-SETUVAR _fish_abbr_elsa:exa\x20\x2dlag\x20\x2d\x2dheader
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gaa:git\x20add\x20\x2d\x2dall
 SETUVAR _fish_abbr_gbl:git\x20blame\x20\x2db\x20\x2dw
@@ -33,8 +26,6 @@ SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_mv:mv\x20\x2di
 SETUVAR _fish_abbr_nvimt:nvim\x20\x22\x2bNERDTree\x22
 SETUVAR _fish_abbr_nvimtg:nvim\x20\x22\x2bNERDTree\x22\x20README\x2emd
-SETUVAR _fish_abbr_pbcopy:xsel\x20\x2d\x2dclipboard\x20\x2d\x2dinput
-SETUVAR _fish_abbr_pbpaste:xsel\x20\x2d\x2dclipboard\x20\x2d\x2doutput
 SETUVAR _fish_abbr_pip:pip3
 SETUVAR _fish_abbr_py:python3
 SETUVAR _fish_abbr_py3:python3
@@ -47,6 +38,7 @@ SETUVAR _fish_abbr_vimtg:vim\x20\x22\x2bNERDTree\x22\x20README\x2emd
 SETUVAR _fish_abbr_which:type\x20\x2da
 SETUVAR _fish_abbr_yt_2D_dl_2D_34_38_30_:yt\x2ddlp\x20\x2df\x20\x27bestvideo\x5bheight\x3c\x3d480\x5d\x2bbestaudio/best\x5bheight\x3c\x3d480\x5d\x27
 SETUVAR _fish_abbr_yt_2D_music:yt\x2ddlp\x20\x2dx\x20\x2d\x2daudio\x2dformat\x20mp3
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
