@@ -20,8 +20,22 @@ set -x PATH $PATH /usr/lib/dart/bin
 # Flutter
 set -x PATH $PATH $HOME/development/flutter/bin
 
+# Java
+set -x JAVA_HOME "/opt/jdks"
+set -x PATH $JAVA_HOME $PATH
+set -x PATH $JAVA_HOME/bin $PATH
 
+# for android development
+set -x ANDROID_HOME "/home/injamul/Android/Sdk"
+set -x PATH $PATH $ANDROID_HOME/emulator
+set -x PATH $PATH $ANDROID_HOME/platform-tools
 
 # User path
 set -x PATH $HOME/.bin $PATH
 set -x PATH $HOME/bin $PATH
+
+# GPG & Git
+set -x GPG_TTY (tty)
+
+
+

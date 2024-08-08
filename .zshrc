@@ -149,6 +149,7 @@ export PATH="$HOME/bin:$PATH"
 
 # git extensions
 export PATH=$HOME/.git/scripts:$PATH
+export GPG_TTY=$(tty)
 
 # Dart
 export PATH="$PATH:/usr/lib/dart/bin"
