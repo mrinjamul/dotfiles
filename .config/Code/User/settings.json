@@ -18,7 +18,6 @@
   "terminal.integrated.autoReplies": {
     "[Oh My Zsh] Would you like to check for updates? [Y/n]": "Y\r"
   },
-  "terminal.integrated.enableBell": true,
   "security.workspace.trust.untrustedFiles": "open",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark Default",
@@ -96,9 +95,10 @@
   },
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
     "plaintext": true,
     "markdown": true,
+    "scminput": false,
+    "yaml": true,
     "c": true,
     "java": true
   },
@@ -111,5 +111,30 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "settingsSync.ignoredExtensions": [],
-  "settingsSync.ignoredSettings": []
+  "settingsSync.ignoredSettings": [],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "cmake.configureOnOpen": false,
+  "C_Cpp.autocompleteAddParentheses": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.renderCharacters": false,
+  "inference.model": "custom",
+  "inference.custom.model": "dolphin-phi",
+  "CodeGPT.apiKey": "Ollama",
+  "CodeGPT.Autocomplete.enabled": false,
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "terminal.integrated.enableVisualBell": true
 }

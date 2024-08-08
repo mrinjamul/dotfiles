@@ -1,6 +1,6 @@
 # Custom Aliases
 
-abbr cls "clear"
+# abbr cls "clear"
 abbr rm "rm -i"
 abbr cp "cp -i"
 abbr mv "mv -i"
@@ -27,12 +27,10 @@ abbr nvimtg 'nvim "+NERDTree" README.md'
 # python3 shortcut
 abbr py3 'python3'
 abbr py 'python3'
-abbr python 'python3'
-abbr pip 'pip3'
 
 # Git
 abbr ga 'git add'
-abbr gaa 'git add --all'
+abbr gaa 'git add -A'
 abbr gbl 'git blame -b -w'
 abbr gcb 'git checkout -b'
 abbr gco 'git checkout'

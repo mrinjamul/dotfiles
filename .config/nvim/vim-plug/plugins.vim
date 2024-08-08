@@ -98,7 +98,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'wfxr/minimap.vim'
 
     " Github Copilot
-    Plug 'github/copilot.vim'
+    " Plug 'github/copilot.vim'
     "
 call plug#end()
 
@@ -259,9 +259,9 @@ let g:minimap_width = 10
 let g:minimap_auto_start_win_enter = 1
 
 " Github Copilot configurations
-let g:copilot_filetypes = {
-            \ 'md': v:true,
-            \ 'markdown': v:true,
-            \ }
+" let g:copilot_filetypes = {
+"             \ 'md': v:true,
+"             \ 'markdown': v:true,
+"             \ }
 
 " END
