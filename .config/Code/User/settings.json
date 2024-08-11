@@ -1,5 +1,4 @@
 {
-  "git.autofetch": true,
   "workbench.startupEditor": "welcomePage",
   "telemetry.telemetryLevel": "off",
   "folders": [],
@@ -15,13 +14,15 @@
   "terminal.integrated.fontFamily": "FiraCode Nerd Font",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.gpuAcceleration": "auto",
-  "terminal.integrated.autoReplies": {
-    "[Oh My Zsh] Would you like to check for updates? [Y/n]": "Y\r"
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
   },
-  "terminal.integrated.enableBell": true,
+  "terminal.integrated.enableVisualBell": true,
+  "git.autofetch": true,
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -54,6 +55,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // all lang except go
@@ -101,14 +108,6 @@
     "markdown": true,
     "c": true,
     "java": true
-  },
-  "deno.codeLens.test": false,
-  "workbench.productIconTheme": "fluent-icons",
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "settingsSync.ignoredExtensions": [],
   "settingsSync.ignoredSettings": []
